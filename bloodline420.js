@@ -58,7 +58,7 @@ form.addEventListener("submit", function (e) {
 
   intensidadAdvertencia.style.display = "none";
 
-  emailjs.send("Bloodline_420", "Buy_ID-Bloodline420", data)
+  emailjs.send("Bloodline_ 420", "Buy_ID-Bloodline420", data)
     .then(() => alert("Pedido enviado correctamente."))
     .catch((error) => alert("Error al enviar el pedido: " + error));
 });
