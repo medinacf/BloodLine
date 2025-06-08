@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloodline 420</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bloodline420.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+    
+  <header>
+    <h1>Bloodline 420</h1>
+    <nav>
+      <a href="#advertencias">Advertencias</a>
+      <a href="#pedido">Hacer pedido</a>
+    </nav>
+  </header>
+
+  <section id="advertencias">
+    <h2>Advertencias:</h2>
+    <p><strong>Snus:</strong></p>
+    <ul>
+      <li>Utilizar bajo tu propia responsabilidad, cualquier daño hecho por el producto no será responsabilidad nuestra.</li>
+      <li>Este producto contiene nicotina, una sustancia muy adictiva; tomar bajo tu propia responsabilidad.</li>
+      <li>Este producto tiene una alta cantidad de nicotina por lo que puede causar mareos, vomito y desmayo si no se utiliza correctamente.</li>
+    </ul>
+    <p><em>(Instrucciones):</em></p>
+    <ul>
+      <li>NO usar durante más de 10min aunque no te marees.</li>
+      <li>Escupir constantemente mientras está colocado (no ingerir saliva mientras el snus esté puesto, y mucho menos tragarse el snus).</li>
+      <li>Si dejas de sentir las piernas, retíralo inmediatamente y guárdalo o deséchalo; Bajo ningún concepto lo dejes más rato.</li>
+      <li>Haga caso a las instrucciones, no nos haremos responsables de cualquier efecto que haya.</li>
+    </ul>
+
+    <p><strong>Vaper:</strong></p>
+    <ul>
+      <li>Utilizar bajo tu propia responsabilidad, cualquier daño hecho por el producto no será responsabilidad nuestra.</li>
+      <li>Este producto contiene nicotina, una sustancia altamente adictiva; tomar bajo tu propia responsabilidad.</li>
+      <li>Por favor, no eche el humo/vapor en la cara de los demás si ellos no fuman. Respeto.</li>
+    </ul>
+
+    <p><strong>Cigarros:</strong></p>
+    <ul>
+      <li>Utilizar bajo tu propia responsabilidad, cualquier daño hecho por el producto no será responsabilidad nuestra.</li>
+      <li>Este producto contiene nicotina, una sustancia altamente adictiva; tomar bajo tu propia responsabilidad.</li>
+      <li>Por favor, no eche el humo/vapor en la cara de los demás si ellos no fuman. Respeto.</li>
+    </ul>
+
+    <p><strong>Al comprar un producto aceptas los siguientes términos y condiciones:</strong></p>
+    <ul>
+      <li>Soy consciente de los riesgos que conlleva el consumo de productos con nicotina.</li>
+      <li>No responsabilizaré a nadie si soy descubierto/a usando estos productos.</li>
+      <li>Cualquier daño causado por el producto será responsabilidad únicamente mía.</li>
+      <li>No perjudicaré la salud de otras personas, aunque ellas también consuman productos con nicotina.</li>
+      <li>El dinero y el producto se intercambian al mismo tiempo. Solo se puede reservar, no entregar por adelantado.</li>
+      <li>Las entregas deben realizarse única y exclusivamente fuera del recinto escolar.</li>
+    </ul>
+  </section>
+
+  <section id="pedido">
+    <h2>Hacer pedido</h2>
+    <form id="pedidoForm">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required>
+
+      <label for="producto">Producto:</label>
+      <select id="producto" name="producto">
+        <option value="snus">Snus</option>
+        <option value="vaper">Vaper</option>
+        <option value="cigarro">Cigarro</option>
+      </select>
+
+      <label for="unidades">Unidades:</label>
+      <input type="number" id="unidades" name="unidades" required min="1">
+
+      <div class="warning" id="snusAdvertencia">⚠ Máximo 4 snus por pedido.</div>
+
+      <label for="detalles" id="detallesLabel">Snus: intensidad, sabor, etc.</label>
+      <textarea id="detalles" name="detalles" rows="4"></textarea>
+
+      <div class="warning" id="intensidadAdvertencia">⚠ No se recomienda más de 3 niveles de intensidad.</div>
+
+      <button type="submit" id="submitBtn">Solicitar pedido</button>
+    </form>
+  </section>
+
+  <script src="bloodline420.js"></script>
+</body>
+</html>
