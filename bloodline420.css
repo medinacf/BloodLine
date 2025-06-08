@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #101010;
+  background-color: #121212;
   color: #fff;
 }
 
@@ -61,14 +61,14 @@ input, select, textarea {
 
 .warning {
   margin-top: 10px;
-  color: rgb(159, 8, 8);
+  color: red;
   font-weight: bold;
   display: none;
 }
 
 button {
   margin-top: 30px;
-  background-color: rgb(180, 8, 43);
+  background-color: crimson;
   color: #fff;
   padding: 10px 15px;
   border: none;
